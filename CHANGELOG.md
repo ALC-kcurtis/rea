@@ -1,5 +1,108 @@
 # Changelog
 
+## [0.4.0](https://github.com/ALC-kcurtis/rea/compare/rea-agents-1.2.0...rea-agents-0.4.0) (2026-10-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **contracts:** batch_decompile, get_call_graph, and find_xrefs_to_name now return structured discriminated output shapes.
+
+### Features
+
+* add cross-platform installation lifecycle ([cc6a955](https://github.com/ALC-kcurtis/rea/commit/cc6a9557e1fdd8c057902e9c0fcfbba2561cbcd7))
+* add cross-platform installation lifecycle ([e651cb6](https://github.com/ALC-kcurtis/rea/commit/e651cb65db87b6d9df9fb13b66a6e5e76f0965e0))
+* add evidence-backed process investigations ([cc8681a](https://github.com/ALC-kcurtis/rea/commit/cc8681a856dacb296f835112d0a27133d4c05ad1))
+* **analysis:** harden agent workflows and evidence boundaries ([883db91](https://github.com/ALC-kcurtis/rea/commit/883db912da6e38e1078286997cc9048471e03896))
+* **artifacts:** add approved native DMG traversal ([24d000a](https://github.com/ALC-kcurtis/rea/commit/24d000a76e3fb98c69d47ab26ac1322a4c87f901))
+* **cli:** add guided local onboarding ([8ca3db8](https://github.com/ALC-kcurtis/rea/commit/8ca3db829f90f99dcaa57bbfc44fb3fe6a6b60c0))
+* **cli:** add self-upgrade command ([c004220](https://github.com/ALC-kcurtis/rea/commit/c004220a2699ac60a67a9c7edf1f96cad8a31d3e))
+* **cli:** add self-upgrade command ([0d77a9f](https://github.com/ALC-kcurtis/rea/commit/0d77a9f1350056a7d2c43771d579e0461029f5b5))
+* **cli:** align terminal workflows with MCP ([b1912b1](https://github.com/ALC-kcurtis/rea/commit/b1912b18e1723c594a030b16acf01341f083455b))
+* evolve REA analysis platform ([4f18e26](https://github.com/ALC-kcurtis/rea/commit/4f18e26ee58f616de788e07639f5b2f91d37ef11))
+* **identity:** rename package and CLI to REA ([3d70812](https://github.com/ALC-kcurtis/rea/commit/3d70812c373ca7ef9a41146555605455515998dd))
+* **mcp:** add typed bounded analysis tools ([893d2e2](https://github.com/ALC-kcurtis/rea/commit/893d2e2d0550271297c452b418f80bdf8ae21514))
+* **process:** add deterministic capture v3 ([d0e21f9](https://github.com/ALC-kcurtis/rea/commit/d0e21f923158b7a3de73d06edf57462869022556))
+* **process:** add deterministic capture v3 ([5a361a6](https://github.com/ALC-kcurtis/rea/commit/5a361a67258e1f89507497eafd5fc487e54d5820))
+* **process:** introduce evidence-safe capture v4 ([ee4d284](https://github.com/ALC-kcurtis/rea/commit/ee4d284597a32b4acc4279b74083d9bf4e32d08b))
+* **session:** add dynamic binary lifecycle ([f32e718](https://github.com/ALC-kcurtis/rea/commit/f32e718cc741bba4deb0162c1a9b93f127e7741a))
+* **setup:** make installation explicit and safe ([29d92ca](https://github.com/ALC-kcurtis/rea/commit/29d92cac5ab23a4e6a5286b0871224abbe705642))
+* **setup:** make installation explicit and safe ([3793889](https://github.com/ALC-kcurtis/rea/commit/3793889ce8662ca8e1e92af1bb5c6ee854848467))
+
+
+### Bug Fixes
+
+* **analysis:** accept valid final dossier pages ([7c36f36](https://github.com/ALC-kcurtis/rea/commit/7c36f3631862e67a0751967c84abc4f423f5475c))
+* **artifacts:** diagnose unpacked ASAR integrity failures ([a504342](https://github.com/ALC-kcurtis/rea/commit/a504342d2b7e5ed87620d449f78102282054e063))
+* **boundaries:** reject unsafe local inputs ([15e8cf3](https://github.com/ALC-kcurtis/rea/commit/15e8cf3234bd3b5ee929db84c5c71e9a18441eb6))
+* **bridge:** harden bounded Hopper boundaries ([f8e8ea3](https://github.com/ALC-kcurtis/rea/commit/f8e8ea35ff08ce5071acbccab188df808708b71c))
+* **ci:** remove redundant process exports ([19bb231](https://github.com/ALC-kcurtis/rea/commit/19bb2317d1bd6773e5fa3f61e32cbf3d6d257830))
+* **cli:** preserve function provider provenance ([c630f41](https://github.com/ALC-kcurtis/rea/commit/c630f410b6a81864bf90211a088c715bfe234722))
+* **contracts:** keep error schema internal ([ac8cc66](https://github.com/ALC-kcurtis/rea/commit/ac8cc668fb6b9305d2dc9014f7a6006d96b18ba6))
+* **contracts:** return structured workflow failures ([4c54ff6](https://github.com/ALC-kcurtis/rea/commit/4c54ff6bcaac02f39c6620a54ac29690a121f33d))
+* **doctor:** require an executable Hopper launcher ([aee9cb8](https://github.com/ALC-kcurtis/rea/commit/aee9cb8e4e919d28ae851987f6555cfceee46977))
+* **hopper:** launch analysis without stealing focus ([ff321dc](https://github.com/ALC-kcurtis/rea/commit/ff321dc574cd510e036fe5910fba79058e5c015b))
+* **hopper:** make loader selection non-interactive ([2b7ef86](https://github.com/ALC-kcurtis/rea/commit/2b7ef8610df3cbee5fe0a4600dce5381cce77793))
+* keep execution options internal ([167a824](https://github.com/ALC-kcurtis/rea/commit/167a824f9131a60d07fca3e99301eecc98d5d5e9))
+* **lifecycle:** validate owned Hopper process identity ([898d6b0](https://github.com/ALC-kcurtis/rea/commit/898d6b0192126030cedd7e5c2cb76f40568cda05))
+* **native:** classify pre-aborted analysis first ([dfd598f](https://github.com/ALC-kcurtis/rea/commit/dfd598f76505af978f2d11afffb5e1f362d3a769))
+* preserve requested evidence paths on macOS ([0c0e2b8](https://github.com/ALC-kcurtis/rea/commit/0c0e2b8a1efb3f56672b9c95fda5c5ab5746284b))
+* preserve requested evidence paths on macOS ([3d0ad79](https://github.com/ALC-kcurtis/rea/commit/3d0ad799c4deb1d3627d8721c31bc76be3f3abd2))
+* **process:** default capture networking to loopback ([bce3398](https://github.com/ALC-kcurtis/rea/commit/bce3398dbe3a3b20952f37573a656aa77b168977))
+* **process:** harden capture validation and cleanup ([ac78de0](https://github.com/ALC-kcurtis/rea/commit/ac78de0a74b09a01efd91d9f88a16fde4f0ed9d9))
+* **process:** keep network approval fail-closed ([9526389](https://github.com/ALC-kcurtis/rea/commit/9526389f815f0937fc01198ff3a8a850c6c1c81a))
+* **setup:** persist detected Hopper launcher ([b2866e4](https://github.com/ALC-kcurtis/rea/commit/b2866e4706f939ffebf65645f5e3feaf4b4095fd))
+* **setup:** preserve consent and startup target kind ([a67054f](https://github.com/ALC-kcurtis/rea/commit/a67054f81500033c0a5b8d87f7f009ed2adda6e3))
+* **setup:** preserve invalid MCP configuration ([88f5edc](https://github.com/ALC-kcurtis/rea/commit/88f5edc2365da92673c184ad0d2a9b218ba22f91))
+* **targets:** cancel startup and probe PE offsets ([66b8d6e](https://github.com/ALC-kcurtis/rea/commit/66b8d6ea90dabc01162c7d42e37056ea3501939e))
+* **verify:** tolerate exited Hopper helpers ([b167bd7](https://github.com/ALC-kcurtis/rea/commit/b167bd7e13ad2e4889f721235fd6b6e3d8e3b08c))
+
+
+### Code Refactoring
+
+* **artifacts:** simplify inventory traversal ([c8d762e](https://github.com/ALC-kcurtis/rea/commit/c8d762e6ffe0a2e23fb539590d7b1850ef1ce2a7))
+* **cli:** share direct analysis tool types ([329fdf6](https://github.com/ALC-kcurtis/rea/commit/329fdf6fe8f3a2bf9679b13a8ce5cb16cf946129))
+* **cli:** share runtime between CLI and MCP ([97541d8](https://github.com/ALC-kcurtis/rea/commit/97541d8dad96e640ffd9ce5f0587dee0b5fbf6c1))
+* **setup:** split setup and CLI registration ([07e1b5a](https://github.com/ALC-kcurtis/rea/commit/07e1b5ac5f6a1724b1064c47ea05f04ccffcb4f3))
+
+
+### Documentation
+
+* **api:** regenerate TypeDoc reference ([0a66cae](https://github.com/ALC-kcurtis/rea/commit/0a66cae16ef8e2a243bbed502bbb7cdbd12a965f))
+* correct pull request tool inventory ([d806480](https://github.com/ALC-kcurtis/rea/commit/d806480e41bcb623448a258ddffeb75082fe1e1f))
+* define REA contributor priorities ([5df4ef6](https://github.com/ALC-kcurtis/rea/commit/5df4ef67a4676f46900aa6022c1af2224efa8761))
+* document capture v4 and native mounts ([aca518b](https://github.com/ALC-kcurtis/rea/commit/aca518bb885825b912567eba95eb64a776a5624c))
+* document CLI safety and provider evaluation ([efc9bd2](https://github.com/ALC-kcurtis/rea/commit/efc9bd270f58a5aaba15edb07cee135d2c54db83))
+* document frictionless binary workflow ([ee6d539](https://github.com/ALC-kcurtis/rea/commit/ee6d539a407493617c1a58816e0329d600495217))
+* document installation and Linux support ([034563a](https://github.com/ALC-kcurtis/rea/commit/034563a4c015c69e878054d4fd06e0e9fa630e24))
+* document process capture v3 ([50f4a29](https://github.com/ALC-kcurtis/rea/commit/50f4a298f44bf56dc78d5717cb23d69db5df4265))
+* document the 43-tool workflow ([1f235cb](https://github.com/ALC-kcurtis/rea/commit/1f235cb52f61c08b65ecb674cac649c34005bc66))
+* explain the installation workflow ([1c83263](https://github.com/ALC-kcurtis/rea/commit/1c83263bbb79aa050d1e560d17da66557afdbad2))
+* list upgrade in CLI reference ([8a24088](https://github.com/ALC-kcurtis/rea/commit/8a24088c2bffd34050ea6f6f0e103f64a3f67a64))
+* **process:** preserve capture invariants ([841990b](https://github.com/ALC-kcurtis/rea/commit/841990bde158a996be65feabcef4aa5e18fc3a4b))
+* record runtime and release constraints ([62ede51](https://github.com/ALC-kcurtis/rea/commit/62ede515b7c7e092714fa936575fd54d282deb93))
+* redesign and localize README ([051b6db](https://github.com/ALC-kcurtis/rea/commit/051b6db65687fd14826b6462cd623feb2504f123))
+* redesign and localize README ([910eda6](https://github.com/ALC-kcurtis/rea/commit/910eda6f323ba1151b0771fe5de6c60a91e3d46d))
+* simplify REA onboarding ([e1dfe86](https://github.com/ALC-kcurtis/rea/commit/e1dfe8613e5a986d5ee64764851f0abcc901398b))
+* simplify REA onboarding ([d85b661](https://github.com/ALC-kcurtis/rea/commit/d85b661be80bd19d477c46ebe0501839c7b63ee7))
+* **skill:** document capture v4 and DMG mounts ([f0a9a3c](https://github.com/ALC-kcurtis/rea/commit/f0a9a3cd258d60046dcd74feea243956489c60dc))
+
+
+### Tests
+
+* add package installation end-to-end coverage ([993356b](https://github.com/ALC-kcurtis/rea/commit/993356b85adc72036ba44cd87b9335e2ec172a32))
+* add source-built Hopper conformance fixtures ([d648bcd](https://github.com/ALC-kcurtis/rea/commit/d648bcd2e41ec0b45bc02a69dee0d7206fc64f8f))
+* **docs:** keep localized claims and tool counts aligned ([a7b84a9](https://github.com/ALC-kcurtis/rea/commit/a7b84a9b4b7ea4336c0f327e13b2948a8d94fba9))
+* **process:** use deterministic hang fixture ([ba15d16](https://github.com/ALC-kcurtis/rea/commit/ba15d16c5869ef29e85a0e9bacff3ac07edda3a2))
+* stabilize artifact pagination coverage ([f56bdde](https://github.com/ALC-kcurtis/rea/commit/f56bdde27679e1f05b34d2cf5efbc6e49bd4c2ca))
+* **verification:** strengthen conformance and real-Hopper checks ([0d36976](https://github.com/ALC-kcurtis/rea/commit/0d369762770d2d92dd72c7dcb2f2f90a64b206ff))
+
+
+### Continuous Integration
+
+* enforce conventional pull request titles ([07a0b98](https://github.com/ALC-kcurtis/rea/commit/07a0b984f2bdbc4fe1ce18d5db13500aa8f3992f))
+* enforce conventional pull request titles ([3a21f16](https://github.com/ALC-kcurtis/rea/commit/3a21f16c1832430765083636511a8c12dbccf2dd))
+* verify installed package with Linux Hopper ([4f97f69](https://github.com/ALC-kcurtis/rea/commit/4f97f699e4d5471557d1ce0ff91e144065d06a61))
+
 ## [1.2.0](https://github.com/morluto/rea/compare/rea-agents-1.1.0...rea-agents-1.2.0) (2026-07-13)
 
 
